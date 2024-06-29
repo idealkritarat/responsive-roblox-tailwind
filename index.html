@@ -10,24 +10,34 @@
 </head>
 
 <!-- #373639 -->
-<body>
-    <header class="flex justify-between bg-[#191A1D] items-center fixed w-screen px-1.5">
-        <div class="flex items-center">
-            <img src="https://www.edigitalagency.com.au/wp-content/uploads/roblox-logo-white-png-transparent.png" class="w-28 ms-4 me-7 cursor-pointer h-fit">
-            <ul class="flex items-center">
-                <li><a href="" class="text-white h-full px-12 py-2 block hover:border-white border-b-2 border-transparent text-[15px]">Discover</a></li>
-                <li><a href="" class="text-white h-full px-12 py-2 block hover:border-white border-b-2 border-transparent text-[15px]">Marketplace</a></li>
-                <li><a href="" class="text-white h-full px-12 py-2 block hover:border-white border-b-2 border-transparent text-[15px]">Create</a></li>
-                <li><a href="" class="text-white h-full px-12 py-2 block hover:border-white border-b-2 border-transparent text-[15px]">Roblox</a></li>
+<body class="bg-[#232527]">
+    <header class="flex justify-between bg-[#191A1D] items-center fixed w-screen px-1.5 gap-[100px]">
+        <div class="flex items-center grow">
+            <span class="material-symbols-outlined text-[#BEBEBE] text-[23px] w-fit hover:bg-[#373639] cursor-pointer rounded-xl p-1.5 inline-block 2xl:hidden">
+                menu
+            </span>
+            <img src="https://userstyles.org/style_screenshots/250841_after.png?r=1719648071" class="ms-4 me-7 cursor-pointer h-9 inline-block 2xl:hidden">
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/roblox-logo-white-png-transparent.png" class="h-5 ms-4 me-7 cursor-pointer 2xl:inline-block hidden">
+            <ul class="lg:flex hidden items-center">
+                <li><a href="" class="text-white h-full 2xl:px-12 px-5 py-2 block hover:border-white border-b-2 border-transparent text-[15px]">Discover</a></li>
+                <li><a href="" class="text-white h-full 2xl:px-12 px-5 py-2 block hover:border-white border-b-2 border-transparent text-[15px]">Marketplace</a></li>
+                <li><a href="" class="text-white h-full 2xl:px-12 px-5 py-2 block hover:border-white border-b-2 border-transparent text-[15px]">Create</a></li>
+                <li><a href="" class="text-white h-full 2xl:px-12 px-5 py-2 block hover:border-white border-b-2 border-transparent text-[15px]">Roblox</a></li>
             </ul>
-            <input type="text">
+            <div class="sm:flex hidden gap-2 items-center w-full max-w-[500px] bg-[#080808] border-[#BEBEBE] border-[1px] rounded-md px-1 focus-within:border-[white]">
+                <span class="material-symbols-outlined text-[#BEBEBE] text-[23px] w-fit">
+                    search
+                </span>
+                <input placeholder="Search" type="text" class="bg-transparent outline-none text-[14px] text-white p-0.5 w-full">
+            </div>
+            
         </div>
         <div class="flex items-center gap-3">
             <div class="flex items-center gap-1 p-1 group cursor-pointer">
                 <span class="material-symbols-outlined text-white text-[35px]">
                     account_circle
                 </span>
-                <span class="text-white text-[12px] group-hover:underline">KTR_MASTER</span>
+                <span class="text-white text-[12px] group-hover:underline sm:inline hidden">KTR_MASTER</span>
                 <span class="text-gray-400 text-[9px]">13+</span>
             </div>
             <span class="material-symbols-outlined text-white hover:bg-[#373639] cursor-pointer rounded-xl p-1.5">
@@ -41,5 +51,8 @@
             </span>
         </div>
     </header>
+    <main class="flex w-screen h-screen bg-[#232527]">
+
+    </main>
 </body>
 </html>
