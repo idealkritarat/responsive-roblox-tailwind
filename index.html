@@ -61,7 +61,7 @@
             </ul>
         </div>
     </header>
-    <aside class="w-[175px] h-[calc(100vh-43px)] max-lg:h-[calc(100vh-83.5px)] fixed top-[43px] max-lg:top-[83.5px] bg-[#191A1D] flex flex-col p-2">
+    <aside class="w-[175px] h-[calc(100vh-43px)] max-lg:h-[calc(100vh-83.5px)] fixed top-[43px] max-lg:top-[83.5px] bg-[#191A1D] flex flex-col p-2 z-10">
         <div class="flex items-center gap-1 p-1 group cursor-pointer">
             <span class="material-symbols-outlined text-white text-[30px]">
                 account_circle
@@ -165,16 +165,47 @@
             </li>
         </ul>
     </aside>
-    <main class="flex flex-col gap-6 w-[calc(100vh-175px)] max-2xl:w-screen top-[43px] max-lg:top-[83.5px] bg-[#232527] absolute left-[175px] max-2xl:left-0 p-7">
+    <main class="flex flex-col gap-6 w-[calc(100vw-175px)] max-2xl:w-screen top-[43px] max-lg:top-[83.5px] bg-[#232527] absolute left-[175px] max-2xl:left-0 p-7">
         <span class="text-white font-extrabold text-3xl">Discover</span>
         <section>
-            <div class="flex items-center gap-1">
+            <div class="flex items-center gap-1 mb-3.5">
                 <span class="text-white text-xl font-semibold">Top Trending</span>
                 <span class="material-symbols-outlined text-white text-xl">
                     info
                 </span>
             </div>
-            
+            <div class="scroll-game overflow-hidden flex gap-3 w-full relative">
+                <div class="bg-[#1E2022] grid place-items-center w-[27px] absolute h-full hover:bg-opacity-80 cursor-pointer">
+                    <span class="material-symbols-outlined text-[#78797A] text-center">
+                        keyboard_arrow_left
+                    </span>
+                </div>
+                <div id="roblox-game" class="cursor-pointer flex flex-col justify-between group">
+                    <div class="w-[150px] h-[150px] bg-[#434343] rounded-xl group-hover:bg-[#373639]"></div>
+                    <div class="text-white font-semibold mt-1">Roblox game</div>
+                    <div class="grid grid-cols-2 mt-4">
+                        <div class="flex text-[#B9B9BA] items-center gap-1">
+                            <span class="material-symbols-outlined text-[15px]">
+                                thumb_up
+                            </span>
+                            <span class="text-[12px]">99%</span>
+                        </div>
+                        <div class="flex text-[#B9B9BA] items-center gap-1">
+                            <span class="material-symbols-outlined text-[15px]">
+                                person
+                            </span>
+                            <span class="text-[12px]">121.7K</span>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    let i = 20;
+                    while(i--) {
+                        const clone = $("#roblox-game").clone();
+                        $(".scroll-game").append(clone);
+                    }
+                </script>
+            </div>
         </section>
     </main>
 </body>
