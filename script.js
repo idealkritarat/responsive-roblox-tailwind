@@ -21,3 +21,8 @@ $(".scroll-left").click( function(dir){
     $(games).css('translate', To + 'px');
     console.log(To);
 });
+
+for(let i=0;i<30;i++) {
+    const clone = $("#roblox-game").clone();
+    $(".scroll-game").append(clone);
+}
